@@ -25,7 +25,7 @@ class LinearRegression:
         Args:
             data:
         """
-        return (x * self.slopes).sum(axis=1) + self.intercept + self.error
+        return (x * self.slopes).sum(axis=1) + self.intercept - self.error
 
     def evaluate(self, Y: Any, X: Any) -> namedtuple:
         """
